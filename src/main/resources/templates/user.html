@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Szablon</title>
+
+ <link rel="stylesheet" type="text/css" href="../templates/css/style.css" />
+ 
+</head>
+
+<body>
+<h1>Hello, the page is for Users!</h1>
+<a style="color: blue" th:href="@{/}">Home</a>
+<form th:action="@{/logout}" method="post">
+  <input type="submit" value="Sign Out" />
+</form>
+  <div id="wrapper">
+    <div id="logo">
+    <img src="images/logo.png" />
+    <div id="menu">
+        <ul>
+        <li><a href="#">Strona główna</a></li>
+        <li><a href="#">O mnie</a></li>
+        <li><a href="#">Oferta</a></li>
+        <li><a href="#">Kontakt</a></li>
+        </ul>
+    </div>
+    <div id="header">
+    <div id="title_head">
+    <h2>Lorem ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac erat eget urna faucibus pellentesque sit amet eget metus.</p>
+    <br />
+    <a href="#">Lorem ipsum</a>
+    <a href="#">Lorem ipsum</a>
+    </div>    
+    <img src="../templates/images/image.jpg" align="right" />
+    </div>
+    </div>
+    <div id="solid">
+    <div id="solid_box1" class="margin3">
+    <img src="images/icon_ecm.png" align="left" />
+    <h2>Lorem ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac erat eget urna faucibus pellentesque sit amet eget metus.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac erat eget urna faucibus pellentesque sit amet eget metus.</p> <br />
+    <a href="#">Lorem ipsum</a>
+    </div>
+    <div id="solid_box2" class="margin2">
+    <img src="images/icon_shop.png" align="left" />
+    <h2>Lorem ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac erat eget urna faucibus pellentesque sit amet eget metus.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac erat eget urna faucibus pellentesque sit amet eget metus.</p><br />
+    <a href="#">Lorem ipsum</a>
+    </div>
+    <div id="solid_box3" class="margin2">
+    <img src="images/icon_print.png" align="left" />
+    <h2>Lorem ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac erat eget urna faucibus pellentesque sit amet eget metus.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac erat eget urna faucibus pellentesque sit amet eget metus.</p><br />
+    <a href="#">Lorem ipsum</a>
+    </div>
+    </div>
+    <img src="images/bg_solid_b.png" style="margin-left: -2px;"/>
+    <div id="footer">
+        <p>&copy; Wszelkie prawa zastrzeżone. <br /> Projekt: <a href="http://www.templatki.net">Darmowe Szablony Stron</a></p>
+    </div>
+    </div>
+</body>
+</html>
